@@ -49,7 +49,7 @@ ui="$(basename "${ui}")"
 
 if [ -x "$(command -v tput)" ]; then
 	bold="$(tput bold)"
-	red="$(tput setaf 1)"
+	red="$(tput setaf 5)"
 	reset="$(tput sgr0)"
 fi
 
