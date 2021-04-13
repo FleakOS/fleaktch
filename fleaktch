@@ -8,7 +8,7 @@ host="$(cat /etc/hostname)"
 os='FleakOS'
 kernel="$(uname -sr)"
 uptime="$(uptime -p | sed 's/up //')"
-packages="$(pacman -Q | wc -l)"
+packages="$(packages manager | wc -l)"
 shell="$(basename "${SHELL}")"
 
 ## UI DETECTION
